@@ -29,6 +29,7 @@ Die eingeschränkte Auswahl an Aktoren und Sensoren hat eine gewisse Kreativitä
 ### Verbindungsschema
 **Hardware:**
 - **Lichtsensor**: Erkennt, ob das ON AIR-Licht ein- oder ausgeschaltet ist.
+![Lichtsensor Anschluss](https://github.com/JasperBleeker/MedienhausOnAir/blob/main/img/wiring_sensor.jpg?raw=true)
 - **Mikrocontroller**: Steuerung der Datenverarbeitung und Kommunikation (ESP32-C6).
 - **LCD-Display**: Zeigt die IP-Adresse des Mikrocontrollers an, um auf einer lokalen Webseite Einstellungen vorzunehmen (z. B. Ausleseintervall, Kalibrierung des Sensors).
 
