@@ -19,7 +19,7 @@ Die eingeschränkte Auswahl an Aktoren und Sensoren hat eine gewisse Kreativitä
 - Zielpublikum: Multi Media Production Studierende, die den Live-Status des Radiostudios in Echtzeit abrufen möchten.
 
 ### Planung und Prozess
-- Ein Flussdiagramm wurde erstellt, um den Informationsfluss zu visualisieren. [Hier Diagramm einfügen, wenn verfügbar]
+- Ein Flussdiagramm wurde erstellt, um den Informationsfluss zu visualisieren. ![Flussdiagramm](https://github.com/JasperBleeker/MedienhausOnAir/blob/main/img/Information%20Flow%20IoT.jpg?raw=true)
 - Iterative Entwicklung mit Fokus auf Hardware und Softwareintegration.
 
 ---
@@ -45,8 +45,8 @@ Die einzelnen Komponenten kommunizieren über **HTTP**, wobei der Mikrocontrolle
 
 ---
 
-## Ablaufdiagramm
-![Ablaufdiagramm](https://github.com/JasperBleeker/MedienhausOnAir/blob/main/img/Information%20Flow%20IoT.jpg?raw=true)
+## Verkabelungsdiagramm
+
 
 ---
 
