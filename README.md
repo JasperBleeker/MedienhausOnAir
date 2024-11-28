@@ -5,7 +5,7 @@ Hier ist eine Projektdokumentation für das **MedienhausOnAir**-Projekt basieren
 # MedienhausOnAir
 
 ## Projektbeschreibung
-**MedienhausOnAir** ist ein IoT-Projekt, das den Live-Status eines Radiostudios überwacht und visualisiert. Das Ziel ist es, Multi Media Production Studierenden eine einfache Möglichkeit zu bieten, den Status des Radiostudios aus der Ferne zu überprüfen. Das Projekt wurde inspiriert vom "ON AIR"-Licht vor dem Radiostudio, das den Live-Status anzeigt.
+**MedienhausOnAir** ist ein IoT-Projekt, das den Live-Status des Radiostudios überwacht und visualisiert. Das Ziel ist es, Multi Media Production Studierenden eine einfache Möglichkeit zu bieten, den Status des Radiostudios aus der Ferne zu überprüfen. Das Projekt wurde inspiriert vom "ON AIR"-Licht vor dem Radiostudio, das den Live-Status anzeigt.
 
 ---
 
