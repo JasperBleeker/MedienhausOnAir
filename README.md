@@ -46,7 +46,7 @@ Die einzelnen Komponenten kommunizieren über **HTTP**, wobei der Mikrocontrolle
 ---
 
 ## Ablaufdiagramm
-![[Screenshot 2024-10-31 at 11.55.51 1.png]]
+![[https://github.com/JasperBleeker/MedienhausOnAir/blob/main/img/Information%20Flow%20IoT.jpg]]
 
 ---
 
