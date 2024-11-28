@@ -46,7 +46,7 @@ Die einzelnen Komponenten kommunizieren über **HTTP**, wobei der Mikrocontrolle
 ---
 
 ## Ablaufdiagramm
-[Hier Diagramm einfügen, sobald es verfügbar ist.]
+![[Screenshot 2024-10-31 at 11.55.51 1.png]]
 
 ---
 
