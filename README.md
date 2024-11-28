@@ -1,4 +1,3 @@
-Hier ist eine Projektdokumentation für das **MedienhausOnAir**-Projekt basierend auf deinen Antworten und Anforderungen. Du kannst sie direkt als Readme.md-Datei verwenden:
 
 ---
 
