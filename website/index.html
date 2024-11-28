@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medienhaus on Air</title>
+    <link rel="stylesheet" href="https://iot-test.dynamicvisualscollective.ch/style/main.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="heroText">
+            <h1>Medienhaus on Air</h1>
+            <p>Finde heraus ob das Radiostudio gerade genutzt wird und wann aufgenommen wurde.</p>
+        </div>
+    </div>
+    <div class="status">
+        <h2>Current Status</h2>
+        <div class="statusSign">
+            <p id="status"></p>
+        </div>
+    </div>
+    <div class="timetable">
+        <h2>Timetable</h2>
+        <div class="chartWrapper">
+            <canvas id="myChart" height="100"></canvas>
+        </div>
+    </div>
+    <footer>
+        <p>Medienhaus on Air - Entwickelt von Jasper Bleeker</p>
+        <div>
+            <p>Sensor Verbindung:</p>
+            <p id="sensorConnection"></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://iot-test.dynamicvisualscollective.ch/status.js"></script>
+    <script src="https://iot-test.dynamicvisualscollective.ch/website.js"></script>
+</body>
+
+</html>
