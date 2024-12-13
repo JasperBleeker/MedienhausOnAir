@@ -44,10 +44,6 @@ Die eingeschränkte Auswahl an Aktoren und Sensoren hat eine gewisse Kreativitä
 ### Kommunikation zwischen den Medienkomponenten
 Die einzelnen Komponenten kommunizieren über **HTTP**, wobei der Mikrocontroller als Server agiert und Daten an das Webinterface sendet.
 
----
-
-## Verkabelungsdiagramm
-
 
 ---
 
@@ -68,3 +64,6 @@ Die einzelnen Komponenten kommunizieren über **HTTP**, wobei der Mikrocontrolle
 Das Projekt wurde vollständig von **Jasper Bleeker** umgesetzt.
 
 ---
+
+## Das Fertige Projekt
+[Website](https://iot-test.dynamicvisualscollective.ch/)
