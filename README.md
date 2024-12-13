@@ -42,8 +42,11 @@ Die eingeschränkte Auswahl an Aktoren und Sensoren hat eine gewisse Kreativitä
 2. **Kalibrierung des Sensors**: Diese war stark abhängig von Umgebungslichtbedingungen (Sonnenlicht, künstliche Beleuchtung). Eine bessere Gehäusemontage könnte hier zukünftige Stabilität bieten.
 
 ### Kommunikation zwischen den Medienkomponenten
-Die einzelnen Komponenten kommunizieren über **HTTP**, wobei der Mikrocontroller als Server agiert und Daten an das Webinterface sendet.
+Die einzelnen Komponenten kommunizieren über **HTTP**, wobei der Mikrocontroller die Daten generiert und an die Datenbank sendet. 
+Die Daten werden über zwei PHP scripts an das Webinterface übertragen [**status_load.php**](https://github.com/JasperBleeker/MedienhausOnAir/blob/main/website/status_load.php) ist für die Anzeige des Live Status indem es den letzten Zustand des sensors aus der Datenbank liest. Dieser wird einmal in der Minute abgefragt.
+Für Den Wochenverlauf ist [**unload.php**](https://github.com/JasperBleeker/MedienhausOnAir/blob/main/website/unload.php) zuständig dieser greift den Sensorverlauf der letzten woche vom server ab und stellt diese mithilfe von [**chart.js**](https://www.chartjs.org/) im Frontend dar.
 
+Die Programmierung des Microkontrollers zur Auslesung des Sensors sowie Kalibrierungswebsite ist [hier](https://github.com/JasperBleeker/MedienhausOnAir/blob/main/mc/Light2WebandCalib2.ino) zu finden.
 
 ---
 
