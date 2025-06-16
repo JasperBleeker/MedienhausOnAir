@@ -136,8 +136,14 @@ table {
 /* End of reset.css */
 
 /* General Styles */
+
+@font-face {
+    font-family: menlo;
+    src: url(/website/font/Menlo-Regular.ttf);
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
     line-height: 1.6;
     color: #333;
@@ -145,8 +151,7 @@ body {
 }
 
 h1 {
-    font-size: 4em;
-    margin-bottom: 0.5em auto;
+    
 }
 
 
@@ -170,44 +175,60 @@ h2 {
 
 
 
-/* Hero Section */
-.hero {
-    background: url('https://images.unsplash.com/photo-1711458963800-7cac93d7c297?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center /cover no-repeat;
-    background-blend-mode: lighten;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* align-items: center; */
-    color: #f4f4f4;
-    background-color: #333;
-    padding: 0 60px;
+/* Dashboard */
+nav {
+    height: 60px;
+    width: 100vw;
+    position: absolute;
+    padding: 20px;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.hero p {
-    margin-bottom: 1.5em;
-    max-width: 70%;
-
-}
-
-.heroText {
-    padding: 40px 20px;
-    /* background-color: rgba(29, 29, 29, 0.8); */
+main {
+    height: 80vh;
+    background-color: #3E3E3E;
+    display: grid;
+    gap: 40px;
+    padding: 80px 180px 40px 180px;
 
 }
 
-.status {
-    padding: 60px 60px;
-    height: 300px;
-
+@media only screen and (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column ;
+    }
 }
 
-.status p {
-    margin: 30px auto;
-    text-align: center;
-    font-size: 80px;
-    font-weight: bold;
+.card {
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    padding: 10px;
+}
 
+#status {
+grid-area: 1 / 1 / 2 / 2;
+font-family: Menlo;
+font-weight: 800;
+}
+
+#zusammenfassung {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#datepicker {
+    grid-area: 3 / 1 / 5 / 2;
+}
+
+#nutzung {
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+#timetable {
+    grid-area: 3 / 2 / 5 / 4;
 }
 
 .timetable {
@@ -215,7 +236,7 @@ h2 {
 }
 
 .chartWrapper {
-    height: 80vh;
+    height: 100%;
 }
 
 
@@ -253,4 +274,3 @@ footer {
     }
 
 }
-

@@ -1,4 +1,5 @@
 // Function to fetch the latest light value and update the "ON AIR" sign
+console.log("helloworld")
 async function updateOnAirSign() {
     try {
         // Fetch data from the PHP endpoint

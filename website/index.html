@@ -5,28 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medienhaus on Air</title>
-    <link rel="stylesheet" href="https://iot-test.dynamicvisualscollective.ch/style/main.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 
 <body>
-    <div class="hero">
-        <div class="heroText">
-            <h1>Medienhaus on Air</h1>
-            <p>Finde heraus ob das Radiostudio gerade genutzt wird und wann aufgenommen wurde.</p>
+    <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" width="190" height="40" viewBox="0 0 190 40" fill="none">
+            <g clip-path="url(#clip0_4_3)">
+                <path
+                    d="M19.588 30.2149H9.09901C7.17861 30.2149 6.09954 28.9255 5.91664 26.374C5.83434 25.3132 5.74289 24.0055 4.81927 22.7526L4.55408 22.3868C3.08178 20.4115 0.00914833 16.3055 0.00914833 11.8702C3.60329e-06 5.0846 7.53526 0.00915527 14.2658 0.00915527C20.5116 0.00915527 27.9006 4.57248 28.5224 11.1111C28.8608 14.6502 28.2481 16.8359 24.1055 22.0668C22.7704 23.7586 22.5692 25.8528 22.4686 26.9867C22.2034 29.7942 20.5482 30.2149 19.588 30.2149ZM11.2663 24.7554H17.2195C17.503 23.0727 18.1431 20.7773 19.7983 18.6923C23.3191 14.2478 23.2276 13.3151 23.063 11.6232C22.8252 9.17239 19.2039 5.45954 14.2658 5.45954C9.91289 5.45954 5.48684 8.69685 5.48684 11.8702C5.48684 14.4948 7.82789 17.6223 8.95269 19.1312L9.24532 19.5245C10.6353 21.4175 11.0926 23.3379 11.2755 24.7554H11.2663Z"
+                    fill="#FF5D48" />
+                <path
+                    d="M10.5622 39.0672H18.134C18.6552 39.0672 19.0851 38.5917 19.0851 38.0064V29.7851H9.49223L9.62026 38.0247C9.6294 38.6008 10.0501 39.0672 10.5713 39.0672H10.5622Z"
+                    stroke="#FF5D48" stroke-width="2" stroke-miterlimit="10" />
+                <path
+                    d="M8.76979 33.3334C11.9979 33.1779 15.226 33.0224 18.4541 32.867C18.9204 32.8487 19.3868 32.8212 19.8441 32.8029C20.722 32.7572 20.7311 31.3855 19.8441 31.4312C16.616 31.5867 13.3879 31.7421 10.1598 31.8976C9.69341 31.9159 9.22703 31.9433 8.76979 31.9616C7.8919 32.0073 7.88276 33.3791 8.76979 33.3334Z"
+                    fill="#FF5D48" />
+                <path
+                    d="M8.75151 35.6379C11.9796 35.4824 15.2077 35.327 18.4358 35.1715C18.9022 35.1532 19.3685 35.1258 19.8258 35.1075C20.7037 35.0618 20.7128 33.69 19.8258 33.7357C16.5977 33.8912 13.3696 34.0467 10.1415 34.2021C9.67513 34.2204 9.20874 34.2479 8.75151 34.2661C7.87361 34.3119 7.86447 35.6836 8.75151 35.6379Z"
+                    fill="#FF5D48" />
+                <path
+                    d="M8.75151 37.7869C11.9796 37.6315 15.2077 37.476 18.4358 37.3205C18.9022 37.3023 19.3685 37.2748 19.8258 37.2565C20.7037 37.2108 20.7128 35.8391 19.8258 35.8848C16.5977 36.0402 13.3696 36.1957 10.1415 36.3512C9.67513 36.3695 9.20874 36.3969 8.75151 36.4152C7.87361 36.4609 7.86447 37.8327 8.75151 37.7869Z"
+                    fill="#FF5D48" />
+                <path d="M31.7779 0H40.2734L51.4208 29.0718V0H58.3891V40H49.9485L38.7462 10.9282V40H31.7779V0Z"
+                    fill="#FF5D48" />
+                <path
+                    d="M106.344 0H116.019L126.819 40H118.918L116.449 30.1143H105.869L103.454 40H95.5533L106.344 0ZM111.163 7.23365L107.441 23.6031H114.913L111.163 7.23365Z"
+                    fill="#FF5D48" />
+                <path
+                    d="M131.135 6.96845V0H154.948V6.96845H146.992V33.0407H154.948V40.0091H131.135V33.0407H139.091V6.96845H131.135Z"
+                    fill="#FF5D48" />
+                <path
+                    d="M178.587 21.1157C179.374 21.2803 180.06 21.6461 180.636 22.2314C181.212 22.8075 181.925 23.9415 182.767 25.6241L190 40.0091H181.322L176.502 29.9131C176.356 29.6296 176.173 29.2364 175.935 28.7334C174.527 25.7156 172.863 24.2067 170.952 24.2067H168.437V40.0183H160.536V0H171.948C177.088 0 180.782 0.914495 183.023 2.73434C185.263 4.55418 186.388 7.51715 186.388 11.6324C186.388 14.385 185.72 16.5706 184.376 18.1984C183.041 19.8262 181.111 20.7956 178.587 21.1157ZM168.437 6.64838V17.5492H172.159C174.317 17.5492 175.871 17.1285 176.804 16.278C177.746 15.4275 178.212 14.0283 178.212 12.0896C178.212 10.1509 177.746 8.75171 176.822 7.91038C175.89 7.06904 174.344 6.64838 172.159 6.64838H168.437Z"
+                    fill="#FF5D48" />
+            </g>
+            <defs>
+                <clipPath id="clip0_4_3">
+                    <rect width="190" height="40" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    </nav>
+    <main>
+        <div class="card" id="status">
+            <h1>Status</h1>
+            <div class="statusSign">
+                <p id="status"></p>
+            </div>
         </div>
-    </div>
-    <div class="status">
-        <h2>Current Status</h2>
-        <div class="statusSign">
-            <p id="status"></p>
+        <div class="card" id="zusammenfassung">
+            <h1>Zusammenfassung</h1>
         </div>
-    </div>
-    <div class="timetable">
-        <h2>Timetable</h2>
-        <div class="chartWrapper">
-            <canvas id="myChart" height="100"></canvas>
+        <div class="card" id="datepicker">
+            <h1>Datum</h1>
         </div>
-    </div>
+        <div class="card" id="nutzung">
+            <h1>Nutzung</h1>
+        </div>
+        <div class="card" id="timetable">
+            <h1>timetable</h1>
+            <div class="chartWrapper">
+                <canvas id="myChart" height="100"></canvas>
+            </div>
+        </div>
+    </main>
     <footer>
         <p>Medienhaus on Air - Entwickelt von Jasper Bleeker</p>
         <div>
@@ -36,8 +78,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://iot-test.dynamicvisualscollective.ch/status.js"></script>
-    <script src="https://iot-test.dynamicvisualscollective.ch/website.js"></script>
+    <script src="/website/js/status.js"></script>
+    <script src="/website/js/website.js"></script>
 </body>
 
 </html>
