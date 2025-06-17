@@ -47,7 +47,7 @@
         </svg>
     </nav>
     <main>
-        <div class="card" id="status">
+        <div class="card" id="statuscard">
             <h1>Status</h1>
             <div class="statusSign">
                 <p id="status"></p>
@@ -55,17 +55,21 @@
         </div>
         <div class="card" id="zusammenfassung">
             <h1>Zusammenfassung</h1>
+            <div id="usageMetrics" class="metrics-container"></div>
         </div>
         <div class="card" id="datepicker">
             <h1>Datum</h1>
         </div>
         <div class="card" id="nutzung">
             <h1>Nutzung</h1>
+            <div class="chartWrapper">
+                <canvas id="usageChart"></canvas>
+            </div>
         </div>
         <div class="card" id="timetable">
             <h1>timetable</h1>
             <div class="chartWrapper">
-                <canvas id="myChart" height="100"></canvas>
+                <canvas id="myChart"></canvas>
             </div>
         </div>
     </main>
@@ -78,8 +82,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="/website/js/status.js"></script>
-    <script src="/website/js/website.js"></script>
+    <script src="/js/status.js"></script>
+    <script src="/js/website.js"></script>
+    <script src="/js/usage.js"></script>
 </body>
 
 </html>

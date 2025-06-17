@@ -139,7 +139,7 @@ table {
 
 @font-face {
     font-family: menlo;
-    src: url(/website/font/Menlo-Regular.ttf);
+    src: url(/font/Menlo-Regular.ttf);
 }
 
 body {
@@ -178,7 +178,6 @@ h2 {
 /* Dashboard */
 nav {
     height: 60px;
-    width: 100vw;
     position: absolute;
     padding: 20px;
     grid-row-gap: 40px;
@@ -209,10 +208,15 @@ main {
     padding: 10px;
 }
 
-#status {
+#statuscard {
 grid-area: 1 / 1 / 2 / 2;
-font-family: Menlo;
-font-weight: 800;
+}
+
+#status {
+    font-family: Menlo;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
 }
 
 #zusammenfassung {
@@ -236,7 +240,8 @@ font-weight: 800;
 }
 
 .chartWrapper {
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 
@@ -248,29 +253,28 @@ footer {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    .hero {
-        height: 50vh;
-        padding: 0 30px;
-    }
+.metrics-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 93, 72, 0.05);
+    border-radius: 8px;
+}
 
-    .hero p {
-        max-width: 90%;
-        margin: 0;
-        font-size: 18px;
-    }
+.metric {
+    text-align: center;
+    padding: 10px;
+}
 
-    .status {
-        padding: 30px 30px;
-        height: 200px;
-    }
+.metric h3 {
+    color: #FF5D48;
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+}
 
-    .status p {
-        font-size: 50px;
-    }
-
-    .timetable {
-        padding: 30px 30px;
-    }
-
+.metric p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
 }
