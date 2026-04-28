@@ -20,7 +20,7 @@ unsigned long timerDelay = 60000; // default to 60s interval
 const char* ssid     = "Igloo";
 const char* pass     = "1glooVision";
 
-const char* serverURL = "https://iot-test.dynamicvisualscollective.ch/load.php"; 
+const char* serverURL = "https://210181-1.web.fhgr.education/load.php"; 
 
 // variables for Lightsensor
 const int sensorPin = 0;

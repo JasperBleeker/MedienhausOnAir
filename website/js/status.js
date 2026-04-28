@@ -3,7 +3,7 @@ console.log("helloworld")
 async function updateOnAirSign() {
     try {
         // Fetch data from the PHP endpoint
-        const response = await fetch('https://iot-test.dynamicvisualscollective.ch/status_load.php');
+        const response = await fetch('https://210181-1.web.fhgr.education/status_load.php');
         const data = await response.json();
 
         // Access the latest light value

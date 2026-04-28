@@ -1,6 +1,6 @@
 async function fetchUsageData() {
     try {
-        const response = await fetch('https://iot-test.dynamicvisualscollective.ch/unload.php');
+        const response = await fetch('https://210181-1.web.fhgr.education/unload.php');
         const data = await response.json();
         return data;
     } catch (error) {

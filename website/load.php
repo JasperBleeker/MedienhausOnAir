@@ -33,6 +33,12 @@ if (json_last_error() === JSON_ERROR_NONE && !empty($input)) {
     $wert = $input["wert"];  // Wert value
     $light = $input["light"];  // Light value
 
+    if ($light == true) {
+        $light = 1;
+    } else {
+        $light = 0;
+    }
+    
     // Insert multiple values into the database
     $sql = "INSERT INTO sensordata (wert, light) VALUES (?, ?)";
     $stmt = $pdo->prepare($sql);
